@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "description": "Google Consent Mode v2 helper: map any CMP's categories to consent signals and push them to gtag/GTM correctly.",
   "license": "MIT",
-  "author": "Ian Pansensoy",
+  "author": "Ian Pansensoy <ipansensoy@gmail.com> (https://github.com/pansensoyi)",
   "type": "module",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
