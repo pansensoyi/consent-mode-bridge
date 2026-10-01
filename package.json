@@ -1,0 +1,25 @@
+{
+  "name": "@pansensoyi/consent-mode-bridge",
+  "version": "0.1.0",
+  "description": "Google Consent Mode v2 helper: map any CMP's categories to consent signals and push them to gtag/GTM correctly.",
+  "license": "MIT",
+  "author": "Ian Pansensoy",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": { ".": { "types": "./dist/index.d.ts", "import": "./dist/index.js" } },
+  "files": ["dist"],
+  "sideEffects": false,
+  "keywords": ["consent-mode","gtm","gtag","gdpr","cmp","privacy","martech"],
+  "repository": { "type": "git", "url": "git+https://github.com/pansensoyi/consent-mode-bridge.git" },
+  "scripts": {
+    "build": "tsc -p tsconfig.build.json",
+    "test": "vitest run",
+    "typecheck": "tsc --noEmit",
+    "prepublishOnly": "npm run build"
+  },
+  "devDependencies": {
+    "typescript": "^5.6.0",
+    "vitest": "^2.1.0"
+  }
+}
